@@ -1,5 +1,41 @@
 <script lang="ts" setup>
 
+const timeLeftCount = ref(0);
+const timeLeft = computed(() => {
+  if (timeLeftCount.value === 0) {
+    setInterval(() => {
+      timeLeftCount.value++;
+    }, 900);
+  }
+
+  const now = new Date();
+  const examDate = new Date("2024-12-24T10:00:00");
+  const diff = examDate.getTime() - now.getTime();
+
+  let days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  if(days < 0) {
+    days = 0;
+  }
+
+  let hours = Math.floor((diff % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  if(hours < 0) {
+    hours = 0;
+  }
+
+  let minutes = Math.floor((diff % (1000 * 60 * 60)) / (1000 * 60));
+  if(minutes < 0) {
+    minutes = 0;
+  }
+
+  let seconds = Math.floor((diff % (1000 * 60)) / 1000);
+  if(seconds < 0) {
+    seconds = 0;
+  }
+
+
+  return `${days}d ${hours}h ${minutes}min ${seconds}s`;
+});
+
 </script>
 
 
@@ -34,7 +70,7 @@
             Zeit bis zur AP 1
           </h1>
           <h2 class="text-h2 text-red-darken-4 mt-8">
-            00:12:34:56
+            {{ timeLeft }}
           </h2>
 
           <v-card-actions>
