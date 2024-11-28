@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "type": "npm",
+            "name": "run dev",
+            "command": "run",
+            "scripts": "dev",
+        },
+        {
+            "type": "npm",
+            "name": "npm build",
+            "command": "run",
+            "scripts": "build",
+        },
+
+    ]
+}
