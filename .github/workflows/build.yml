@@ -1,0 +1,40 @@
+name: Build
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+          cache: 'pnpm'
+
+      - name: Install pnpm
+        run: npm install -g pnpm
+
+      - name: Install dependencies
+        run: pnpm install
+
+      - name: Run linting
+        run: pnpm run lint
+
+      - name: Type-check with vue-tsc
+        run: pnpm run type-check
+
+      - name: Build the app
+        run: pnpm run build
+
+      - name: Archive build output
+        uses: actions/upload-artifact@v3
+        with:
+          name: build-output
+          path: dist/
