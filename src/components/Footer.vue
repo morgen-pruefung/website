@@ -4,7 +4,7 @@
 
 <template>
   <v-footer class="custom-footer pt-8">
-    <v-container class="w-50">
+    <v-container class="w-66">
       <v-row>
         <div class="d-flex justify-space-between w-100">
           <div>
