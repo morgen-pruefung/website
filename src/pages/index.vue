@@ -12,7 +12,7 @@
             Morgen-Pruefung.de
           </h1>
           <p class="text-h4 text-secondary text-center mt-4">
-            Komprimierte Lerninhalte für dich!
+            Komprimierte & konstenlose Lerninhalte für dich!
           </p>
         </div>
       </v-col>
@@ -24,16 +24,31 @@
         md="12"
       >
         <v-card
+          border="10px"
           class="text-center pa-4"
           color="red"
+          variant="outlined"
           width="50%"
         >
           <h1 class="text-h3">
             Zeit bis zur AP 1
           </h1>
-          <h2 class="text-h3 code">
-            01:12:34:56
+          <h2 class="text-h2 text-red-darken-4 mt-8">
+            00:12:34:56
           </h2>
+
+          <v-card-actions>
+            <v-btn
+              append-icon="mdi-alert"
+              class="font-weight-bold mt-8"
+              color="red"
+              prepend-icon="mdi-alert"
+              variant="flat"
+              width="100%"
+            >
+              Jetzt schnell lernen
+            </v-btn>
+          </v-card-actions>
         </v-card>
       </v-col>
     </v-row>
@@ -49,6 +64,7 @@
         >
           <v-card-actions>
             <v-btn
+              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="blue"
               prepend-icon="mdi-arrow-right"
@@ -71,6 +87,7 @@
         >
           <v-card-actions>
             <v-btn
+              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="blue"
               prepend-icon="mdi-arrow-right"
@@ -93,6 +110,7 @@
         >
           <v-card-actions>
             <v-btn
+              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="blue"
               prepend-icon="mdi-arrow-right"
@@ -115,6 +133,7 @@
         >
           <v-card-actions>
             <v-btn
+              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="blue"
               prepend-icon="mdi-arrow-right"

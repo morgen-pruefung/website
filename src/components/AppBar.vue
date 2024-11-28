@@ -62,7 +62,23 @@ import router from "@/router";
 
 
     <template #append>
-      <v-btn icon>
+      <RouterLink
+        class="no-decoration"
+        to="/login/"
+      >
+        <v-btn
+          color="blue"
+          prepend-icon="mdi-login"
+          variant="outlined"
+        >
+          Login
+        </v-btn>
+      </RouterLink>
+
+      <v-btn
+        v-if="false"
+        icon
+      >
         <v-icon>mdi-account-circle</v-icon>
         <v-menu activator="parent">
           <v-list>
@@ -87,17 +103,38 @@ import router from "@/router";
         </v-menu>
       </v-btn>
 
-      <v-btn icon>
+      <v-btn
+        class="ml-4"
+        icon
+      >
         <v-icon>mdi-dots-vertical</v-icon>
 
         <v-menu activator="parent">
           <v-list>
             <RouterLink
               class="no-decoration"
-              to="/settings/"
+              to="/about-us/"
             >
-              <v-list-item prepend-icon="mdi-cog">
-                <v-list-item-title>Einstellungen</v-list-item-title>
+              <v-list-item prepend-icon="mdi-account-group">
+                <v-list-item-title>Über uns</v-list-item-title>
+              </v-list-item>
+            </RouterLink>
+
+            <RouterLink
+              class="no-decoration"
+              to="/help/"
+            >
+              <v-list-item prepend-icon="mdi-message-question">
+                <v-list-item-title>Hilfe</v-list-item-title>
+              </v-list-item>
+            </RouterLink>
+
+            <RouterLink
+              class="no-decoration"
+              to="/feedback/"
+            >
+              <v-list-item prepend-icon="mdi-bug">
+                <v-list-item-title>Feedback</v-list-item-title>
               </v-list-item>
             </RouterLink>
           </v-list>

@@ -22,7 +22,7 @@
           </div>
           <div>
             <h2>Kontakt</h2>
-            <p>Gründer</p>
+            <p>Gründer: Oliver Schlüter</p>
             <p>Discord: real_oliver</p>
             <p>oliver@morgen-pruefung.de</p>
           </div>
