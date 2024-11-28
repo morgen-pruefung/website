@@ -1,5 +1,7 @@
 <script lang="ts" setup>
 
+import BottomFloatingBar from "@/components/BottomFloatingBar.vue";
+
 const timeLeftCount = ref(0);
 const timeLeft = computed(() => {
   if (timeLeftCount.value === 0) {
@@ -40,6 +42,8 @@ const timeLeft = computed(() => {
 
 
 <template>
+  <BottomFloatingBar/>
+
   <v-container class="top-margin bottom-margin">
     <v-row>
       <v-col>
