@@ -25,7 +25,7 @@ import router from "@/router";
     <div class="d-flex align-start justify-center flex-grow-1">
       <v-btn
         class="mx-2"
-        color="primary"
+        color="grey"
         prepend-icon="mdi-file-document"
         rounded
       >
@@ -34,7 +34,7 @@ import router from "@/router";
 
       <v-btn
         class="mx-2"
-        color="primary"
+        color="grey"
         prepend-icon="mdi-puzzle"
         rounded
       >
@@ -43,7 +43,7 @@ import router from "@/router";
 
       <v-btn
         class="mx-2"
-        color="primary"
+        color="grey"
         prepend-icon="mdi-forum"
         rounded
       >
@@ -52,7 +52,7 @@ import router from "@/router";
 
       <v-btn
         class="mx-2"
-        color="primary"
+        color="grey"
         prepend-icon="mdi-bookshelf"
         rounded
       >
@@ -67,7 +67,7 @@ import router from "@/router";
         to="/login/"
       >
         <v-btn
-          color="blue"
+          color="secondary"
           prepend-icon="mdi-login"
           variant="outlined"
         >
