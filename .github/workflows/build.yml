@@ -9,23 +9,36 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - name: Checkout Repository
+        uses: actions/checkout@v2
 
-      - name: Setup Node.js
-        uses: actions/setup-node@v4
+      - name: Cache pnpm store
+        uses: actions/cache@v2
         with:
-          node-version: 20
-          cache: 'npm'
+          path: ~/.pnpm-store
+          key: ${{ runner.os }}-pnpm-${{ hashFiles('**/pnpm-lock.yaml') }}
+          restore-keys: |
+            ${{ runner.os }}-pnpm-
 
-      - name: Install dependencies
-        run: npm install
+      - name: Install Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.x'
 
-      - name: Build the app
-        run: npm run build
+      - name: Install pnpm
+        run: npm install -g pnpm
 
-      - name: Archive build output
+      - name: Install pnpm dependencies
+        run: pnpm install
+
+      - name: Build web app
+        run: pnpm run build
+
+      - name: Archive frontend files
+        run: cd dist && zip -r ../frontend-files.zip . && cd ..
+
+      - name: Upload frontend zip file
         uses: actions/upload-artifact@v3
         with:
-          name: build-output
-          path: dist/
+          name: frontend-files
+          path: frontend-files.zip
