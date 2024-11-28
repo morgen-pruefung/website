@@ -1,10 +1,134 @@
+<script lang="ts" setup>
+
+</script>
+
+
 <template>
-  <div>
-    <h1>Home</h1>
-    <p>Home page content</p>
-  </div>
+  <v-container class="top-margin bottom-margin">
+    <v-row>
+      <v-col>
+        <div>
+          <h1 class="text-h1 font-weight-bold text-primary text-center">
+            Morgen-Pruefung.de
+          </h1>
+          <p class="text-h4 text-secondary text-center mt-4">
+            Komprimierte Lerninhalte für dich!
+          </p>
+        </div>
+      </v-col>
+    </v-row>
+
+    <v-row class="top-margin">
+      <v-col class="d-flex justify-center" md="12">
+        <v-card class="text-center pa-4" color="red" width="50%">
+          <h1 class="text-h3">Zeit bis zur AP 1</h1>
+          <h2 class="text-h3 code">01:12:34:56</h2>
+        </v-card>
+      </v-col>
+    </v-row>
+
+    <v-row class="top-margin">
+      <v-col md="6">
+        <v-card
+          color="blue"
+          subtitle="Akute Prüfungsvorbereitung"
+          text="Der Titel der Prüfung ist: 'Einrichten eines IT-gestützten Arbeitsplatzes' und ist für alle Fachinformatiker Berufsgruppen relevant. Sie hat dauert 90 Minuten und macht 20% deiner Gesamtnote aus."
+          title="Fachinformatiker | Teil 1"
+          variant="tonal"
+        >
+          <v-card-actions>
+            <v-btn
+              class="font-weight-bold"
+              color="blue"
+              prepend-icon="mdi-arrow-right"
+              variant="flat"
+              width="100%"
+            >
+              Jetzt schnell lernen
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+
+      <v-col md="6">
+        <v-card
+          color="blue"
+          subtitle="Akute Prüfungsvorbereitung"
+          text="Der zweite Teil setzt sich aus diesen teilen zusammen: 'Planen und Umsetzen eines Softwareprojektes' und 'Entwicklung und Umsetzung von Algorithmen'. Jeder Teil dauert 90 Minuten und macht 10% deiner Gesamtnote aus."
+          title="Fachinformatiker AE | Teil 2"
+          variant="tonal"
+        >
+          <v-card-actions>
+            <v-btn
+              class="font-weight-bold"
+              color="blue"
+              prepend-icon="mdi-arrow-right"
+              variant="flat"
+              width="100%"
+            >
+              Jetzt schnell lernen
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+
+      <v-col md="6">
+        <v-card
+          color="blue"
+          subtitle="Akute Prüfungsvorbereitung"
+          text="Der zweite Teil setzt sich aus diesen teilen zusammen: 'Konzeption und Administration von IT-Systemen' und 'Analyse und Entwicklung von Netzwerken'. Jeder Teil dauert 90 Minuten und macht 10% deiner Gesamtnote aus."
+          title="Fachinformatiker SI | Teil 2"
+          variant="tonal"
+        >
+          <v-card-actions>
+            <v-btn
+              class="font-weight-bold"
+              color="blue"
+              prepend-icon="mdi-arrow-right"
+              variant="flat"
+              width="100%"
+            >
+              Jetzt schnell lernen
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+
+      <v-col md="6">
+        <v-card
+          color="blue"
+          subtitle="Akute Prüfungsvorbereitung"
+          text="Der Wirtschafts- und Sozialkunde Teil der Prüfung dauert 60 Minuten und macht 10% deiner Gesamtnote aus. Er ist für alle Fachinformatiker Berufsgruppen relevant."
+          title="Fachinformatiker | WiSo"
+          variant="tonal"
+        >
+          <v-card-actions>
+            <v-btn
+              class="font-weight-bold"
+              color="blue"
+              prepend-icon="mdi-arrow-right"
+              variant="flat"
+              width="100%"
+            >
+              Jetzt schnell lernen
+            </v-btn>
+          </v-card-actions>
+        </v-card>
+      </v-col>
+    </v-row>
+  </v-container>
 </template>
 
-<script lang="ts" setup>
-  //
-</script>
+<style scoped>
+.top-margin {
+  margin-top: 150px !important;
+}
+
+.bottom-margin {
+  margin-bottom: 150px !important;
+}
+
+.code {
+  font-family: "Courier New", Courier, monospace;
+}
+</style>
