@@ -19,10 +19,21 @@
     </v-row>
 
     <v-row class="top-margin">
-      <v-col class="d-flex justify-center" md="12">
-        <v-card class="text-center pa-4" color="red" width="50%">
-          <h1 class="text-h3">Zeit bis zur AP 1</h1>
-          <h2 class="text-h3 code">01:12:34:56</h2>
+      <v-col
+        class="d-flex justify-center"
+        md="12"
+      >
+        <v-card
+          class="text-center pa-4"
+          color="red"
+          width="50%"
+        >
+          <h1 class="text-h3">
+            Zeit bis zur AP 1
+          </h1>
+          <h2 class="text-h3 code">
+            01:12:34:56
+          </h2>
         </v-card>
       </v-col>
     </v-row>
