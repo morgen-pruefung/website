@@ -20,3 +20,19 @@ or run in development mode:
 npm install
 npm run dev
 ```
+
+## Docker
+
+Build the image:
+    
+```bash
+docker build -t mp-frontend .
+```
+
+Run the container:
+
+```bash
+docker run -p 4343:80 mp-frontend
+```
+
+Open the website in your browser: [http://localhost:4343](http://localhost:4343)
