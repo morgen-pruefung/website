@@ -44,15 +44,6 @@ import router from "@/router";
       <v-btn
         class="mx-4"
         color="grey"
-        prepend-icon="mdi-forum"
-        rounded
-      >
-        Forum
-      </v-btn>
-
-      <v-btn
-        class="mx-4"
-        color="grey"
         prepend-icon="mdi-bookshelf"
         rounded
       >
