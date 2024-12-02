@@ -11,7 +11,7 @@ const timeLeft = computed(() => {
   }
 
   const now = new Date();
-  const examDate = new Date("2024-12-24T10:00:00");
+  const examDate = new Date("2025-03-25T10:00:00");
   const diff = examDate.getTime() - now.getTime();
 
   let days = Math.floor(diff / (1000 * 60 * 60 * 24));
