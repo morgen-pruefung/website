@@ -1,4 +1,5 @@
-FROM node:20 AS build
+# Stage 1: Build
+FROM node:20-alpine AS build
 
 # Set the working directory
 WORKDIR /app
@@ -7,7 +8,7 @@ WORKDIR /app
 COPY package*.json ./
 
 # Install dependencies
-RUN npm install
+RUN npm ci
 
 # Copy the rest of the application source code
 COPY . .
@@ -15,14 +16,11 @@ COPY . .
 # Build the Vue.js application
 RUN npm run build
 
-# Use a lightweight web server for the production image
-FROM nginx:stable-alpine
+# Stage 2: Serve with Caddy
+FROM caddy:alpine
 
-# Copy the built files from the previous stage to the Nginx web root
-COPY --from=build /app/dist /usr/share/nginx/html
+# Copy the built files from the previous stage to the Caddy web root
+COPY --from=build /app/dist /usr/share/caddy
 
 # Expose port 80 to the container
 EXPOSE 80
-
-# Start Nginx server
-CMD ["nginx", "-g", "daemon off;"]
