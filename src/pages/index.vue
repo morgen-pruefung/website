@@ -42,7 +42,7 @@ const timeLeft = computed(() => {
 
 
 <template>
-  <BottomFloatingBar/>
+  <BottomFloatingBar />
 
   <v-container class="top-margin bottom-margin">
     <v-row>

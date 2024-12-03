@@ -9,7 +9,9 @@
         <v-col>
           <div class="d-flex justify-space-between w-100">
             <div>
-              <h2 class="text-primary">Social Media</h2>
+              <h2 class="text-primary">
+                Social Media
+              </h2>
               <p><a href="https://discord.gg/UxEZAB9teg">Discord</a></p>
               <p><a href="https://www.instagram.com/morgen_pruefung">Instagram</a></p>
               <p><a href="https://www.tiktok.com/@morgen_pruefung">TikTok</a></p>
@@ -20,7 +22,9 @@
               <p><a href="https://www.twitch.tv/morgenpruefung ">Twitch</a></p>
             </div>
             <div>
-              <h2 class="text-primary">Kontakt</h2>
+              <h2 class="text-primary">
+                Kontakt
+              </h2>
 
               <h4>Die Gründer</h4>
               <p>oliver@morgen-pruefung.de</p>
@@ -33,7 +37,9 @@
               <p>Discord server: <a href="https://discord.gg/UxEZAB9teg">hier beitreten</a></p>
             </div>
             <div>
-              <h2 class="text-primary">So kannst du uns unterstützen</h2>
+              <h2 class="text-primary">
+                So kannst du uns unterstützen
+              </h2>
               <ul>
                 <li>Teile morgen-pruefung.de mit Freunden</li>
                 <li>Teile Lerninhalte mit der Community</li>
@@ -49,7 +55,7 @@
 
       <v-row class="mt-8">
         <v-col>
-          <v-divider opacity="40%"/>
+          <v-divider opacity="40%" />
           <div class="bottom-footer d-flex justify-space-between mt-4">
             <p>&copy; {{ new Date().getFullYear() }} <strong>Morgen Prüfung</strong></p>
 

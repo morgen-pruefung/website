@@ -11,7 +11,8 @@
       <v-btn
         prepend-icon="mdi-alert"
         variant="outlined"
-      >LERNE JETZT
+      >
+        LERNE JETZT
       </v-btn>
     </RouterLink>
   </div>
