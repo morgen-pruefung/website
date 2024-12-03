@@ -33,12 +33,3 @@ jobs:
 
       - name: Build web app
         run: pnpm run build
-
-      - name: Archive frontend files
-        run: cd dist && zip -r ../frontend-files.zip . && cd ..
-
-      - name: Upload frontend zip file
-        uses: actions/upload-artifact@v3
-        with:
-          name: frontend-files
-          path: frontend-files.zip
