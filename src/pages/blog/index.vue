@@ -1,6 +1,6 @@
 <script lang="ts" setup>
 
-import {BlogArticle, getArticles} from "@/api/blog/blog";
+import {type BlogArticle, getArticles} from "@/api/blog/blog";
 import {formatDate, formatStringArray} from "../../utils/formatUtils";
 
 const articles = ref<BlogArticle[]>([]);
@@ -47,8 +47,15 @@ onMounted(async () => {
           </v-card-subtitle>
           <v-card-text>{{ a.summary }}</v-card-text>
           <v-card-actions>
-            <v-btn :to="'/blog/'+a.id" variant="tonal">Lesen</v-btn>
-            <v-btn variant="tonal">Teilen</v-btn>
+            <v-btn
+              :to="'/blog/'+a.id"
+              variant="tonal"
+            >
+              Lesen
+            </v-btn>
+            <v-btn variant="tonal">
+              Teilen
+            </v-btn>
           </v-card-actions>
         </v-card>
       </v-col>

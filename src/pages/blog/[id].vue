@@ -1,7 +1,8 @@
 <script lang="ts" setup>
 import router from "@/router";
 import {type BlogArticle, getArticle} from "@/api/blog/blog";
-import {formatDate, formatStringArray} from "../../utils/formatUtils";
+import {formatDate, formatStringArray} from "@/utils/formatUtils";
+import MarkdownIt from "markdown-it";
 
 const articleId = (router.currentRoute.value.params as any).id;
 const article = ref<BlogArticle>({
@@ -16,11 +17,14 @@ const article = ref<BlogArticle>({
 
 onMounted(async () => {
   article.value = await getArticle(articleId);
+
+  const md = MarkdownIt();
+  document.getElementById("content")!.innerHTML = md.render(article.value.body);
 });
 </script>
 
 <template>
-  <v-container>
+  <v-container class="w-50">
     <v-row>
       <v-col>
         <div>
@@ -36,14 +40,17 @@ onMounted(async () => {
     </v-row>
     <v-row class="mt-8">
       <v-col>
-        <div class="content">
-          {{ article.body }}
-        </div>
+        <div
+          id="content"
+        />
       </v-col>
     </v-row>
   </v-container>
 </template>
 
 <style scoped>
-
+::v-deep #content * {
+  padding: revert;
+  margin: revert;
+}
 </style>
