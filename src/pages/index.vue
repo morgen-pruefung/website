@@ -43,10 +43,11 @@
               class="font-weight-bold mt-8"
               color="red"
               prepend-icon="mdi-alert"
+              to="/blog"
               variant="flat"
               width="100%"
             >
-              Newsletter abbonieren
+              Schau bei unseren Blog vorbei
             </v-btn>
           </v-card-actions>
         </v-card>
