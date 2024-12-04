@@ -3,8 +3,7 @@
     <v-main>
       <AppBar />
       <main>
-        <!--<router-view />-->
-        <WIP />
+        <router-view />
       </main>
       <Footer />
     </v-main>
@@ -14,7 +13,6 @@
 <script lang="ts" setup>
 //
 import Footer from "@/components/Footer.vue";
-import WIP from "@/pages/WIP.vue";
 </script>
 
 <style scoped>

@@ -46,6 +46,7 @@ import router from "@/router";
         color="grey"
         prepend-icon="mdi-bookshelf"
         rounded
+        to="/blog/"
       >
         Blog
       </v-btn>
