@@ -9,7 +9,7 @@ export type BlogArticle = {
 }
 
 export async function getArticles(): Promise<BlogArticle[]> {
-  const response = await fetch("http://localhost:4242/api/v1/blog/article", {
+  const response = await fetch("https://morgen-pruefung:4242/api/v1/blog/article", {
     method: "GET",
     headers: {
       "Accept": "application/json",
@@ -24,7 +24,7 @@ export async function getArticles(): Promise<BlogArticle[]> {
 }
 
 export async function getArticle(id: string): Promise<BlogArticle> {
-  const response = await fetch("http://localhost:4242/api/v1/blog/article/"+id, {
+  const response = await fetch("https://morgen-pruefung:4242/api/v1/blog/article/"+id, {
     method: "GET",
     headers: {
       "Accept": "application/json",
