@@ -1,5 +1,5 @@
 export interface BlogArticle {
-  id: number;
+  id: string;
   title: string;
   summary: string;
   body: string;
@@ -18,6 +18,21 @@ export async function getArticles(): Promise<BlogArticle[]> {
 
   if (!response.ok) {
     throw new Error("Error fetching articles");
+  }
+
+  return await response.json();
+}
+
+export async function getArticle(id: string): Promise<BlogArticle> {
+  const response = await fetch("http://localhost:4242/api/v1/blog/article/"+id, {
+    method: "GET",
+    headers: {
+      "Accept": "application/json",
+    },
+  });
+
+  if (!response.ok) {
+    throw new Error("Error fetching article");
   }
 
   return await response.json();
