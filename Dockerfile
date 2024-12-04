@@ -22,5 +22,8 @@ FROM caddy:alpine
 # Copy the built files from the previous stage to the Caddy web root
 COPY --from=build /app/dist /usr/share/caddy
 
-# Expose port 80 to the container
+# Add Caddyfile configuration
+COPY Caddyfile /etc/caddy/Caddyfile
+
+# Expose port 80
 EXPOSE 80
