@@ -4,8 +4,14 @@
 
     <url>
         <loc>https://morgen-pruefung.de/</loc>
-        <lastmod>2024-12-03</lastmod>
+        <lastmod>2024-12-04</lastmod>
         <priority>1.0</priority>
+        <changefreq>daily</changefreq>
+    </url>
+    <url>
+        <loc>https://morgen-pruefung.de/blog/</loc>
+        <lastmod>2024-12-04</lastmod>
+        <priority>0.75</priority>
         <changefreq>daily</changefreq>
     </url>
 
