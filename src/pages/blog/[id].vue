@@ -4,7 +4,8 @@ import {type BlogArticle, getArticle} from "@/api/blog/blog";
 import {formatDate, formatStringArray} from "@/utils/formatUtils";
 import MarkdownIt from "markdown-it";
 
-const articleId = (router.currentRoute.value.params as any).id;
+const params = router.currentRoute.value.params as {id: string};
+const articleId = params.id;
 const article = ref<BlogArticle>({
   id: "",
   title: "",
