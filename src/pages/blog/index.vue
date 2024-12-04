@@ -12,6 +12,14 @@ onMounted(async () => {
   });
 });
 
+function copyToClipboard(text: string) {
+  navigator.clipboard.writeText(text).then(() => {
+    window.alert('Link wurde in die Zwischenablage kopiert!');
+  }, (err) => {
+    console.error('Could not copy text: ', err);
+  });
+}
+
 </script>
 
 <template>
@@ -53,7 +61,7 @@ onMounted(async () => {
             >
               Lesen
             </v-btn>
-            <v-btn variant="tonal">
+            <v-btn variant="tonal" @click="copyToClipboard('https://morgen-pruefung.de/blog/'+a.id)">
               Teilen
             </v-btn>
           </v-card-actions>
