@@ -131,6 +131,12 @@ import router from "@/router";
                 <v-list-item-title>Feedback</v-list-item-title>
               </v-list-item>
             </RouterLink>
+
+            <a href="https://github.com/morgen-pruefung"  target="_blank">
+              <v-list-item prepend-icon="mdi-github">
+                <v-list-item-title>GitHub</v-list-item-title>
+              </v-list-item>
+            </a>
           </v-list>
         </v-menu>
       </v-btn>

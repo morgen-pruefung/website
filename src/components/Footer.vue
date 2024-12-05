@@ -35,6 +35,7 @@
               <h4>Support</h4>
               <p>E-Mail: support@morgen-pruefung.de</p>
               <p>Discord server: <a href="https://discord.gg/UxEZAB9teg">hier beitreten</a></p>
+              <p>GitHub: <a href="https://github.com/morgen-pruefung">hier</a></p>
             </div>
             <div>
               <h2 class="text-primary">
