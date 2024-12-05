@@ -58,10 +58,11 @@ import router from "@/router";
     <template #append>
       <RouterLink
         class="no-decoration"
-        to="/login/"
+        to=""
       >
         <v-btn
           color="secondary"
+          disabled
           prepend-icon="mdi-login"
           variant="outlined"
         >
@@ -69,33 +70,30 @@ import router from "@/router";
         </v-btn>
       </RouterLink>
 
-      <v-btn
-        v-if="false"
-        icon
-      >
-        <v-icon>mdi-account-circle</v-icon>
-        <v-menu activator="parent">
-          <v-list>
-            <RouterLink
-              class="no-decoration"
-              to="/login/"
-            >
-              <v-list-item prepend-icon="mdi-login">
-                <v-list-item-title>Login</v-list-item-title>
-              </v-list-item>
-            </RouterLink>
+<!--      <v-btn icon>-->
+<!--        <v-icon>mdi-account-circle</v-icon>-->
+<!--        <v-menu activator="parent">-->
+<!--          <v-list>-->
+<!--            <RouterLink-->
+<!--              class="no-decoration"-->
+<!--              to="/login/"-->
+<!--            >-->
+<!--              <v-list-item prepend-icon="mdi-login">-->
+<!--                <v-list-item-title>Login</v-list-item-title>-->
+<!--              </v-list-item>-->
+<!--            </RouterLink>-->
 
-            <RouterLink
-              class="no-decoration"
-              to="/register/"
-            >
-              <v-list-item prepend-icon="mdi-account-plus">
-                <v-list-item-title>Registieren</v-list-item-title>
-              </v-list-item>
-            </RouterLink>
-          </v-list>
-        </v-menu>
-      </v-btn>
+<!--            <RouterLink-->
+<!--              class="no-decoration"-->
+<!--              to="/register/"-->
+<!--            >-->
+<!--              <v-list-item prepend-icon="mdi-account-plus">-->
+<!--                <v-list-item-title>Registieren</v-list-item-title>-->
+<!--              </v-list-item>-->
+<!--            </RouterLink>-->
+<!--          </v-list>-->
+<!--        </v-menu>-->
+<!--      </v-btn>-->
 
       <v-btn
         class="ml-4"
@@ -107,27 +105,27 @@ import router from "@/router";
           <v-list>
             <RouterLink
               class="no-decoration"
-              to="/about-us/"
+              to=""
             >
-              <v-list-item prepend-icon="mdi-account-group">
+              <v-list-item disabled prepend-icon="mdi-account-group">
                 <v-list-item-title>Über uns</v-list-item-title>
               </v-list-item>
             </RouterLink>
 
             <RouterLink
               class="no-decoration"
-              to="/help/"
+              to=""
             >
-              <v-list-item prepend-icon="mdi-message-question">
+              <v-list-item disabled prepend-icon="mdi-message-question">
                 <v-list-item-title>Hilfe</v-list-item-title>
               </v-list-item>
             </RouterLink>
 
             <RouterLink
               class="no-decoration"
-              to="/feedback/"
+              to=""
             >
-              <v-list-item prepend-icon="mdi-bug">
+              <v-list-item disabled prepend-icon="mdi-bug">
                 <v-list-item-title>Feedback</v-list-item-title>
               </v-list-item>
             </RouterLink>
