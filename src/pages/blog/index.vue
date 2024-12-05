@@ -48,7 +48,9 @@ function copyToClipboard(text: string) {
           color="green-lighten-2"
           variant="outlined"
         >
-          <v-card-title>{{ a.title }}</v-card-title>
+          <RouterLink :to="'/blog/'+a.id">
+            <v-card-title>{{ a.title }}</v-card-title>
+          </RouterLink>
           <v-card-subtitle>
             {{ formatStringArray(a.authors) }} | {{ formatDate(a.published_at) }}<br>
             <span class="code font-weight-bold">{{ formatStringArray(a.tags) }}</span><br>
