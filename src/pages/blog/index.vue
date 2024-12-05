@@ -38,7 +38,7 @@ function copyToClipboard(text: string) {
     </v-row>
   </v-container>
 
-  <v-container class="mt-16 w-50">
+  <v-container class="mt-16 w-33">
     <v-row
       v-for="a in articles"
       :key="a.id"
@@ -57,11 +57,16 @@ function copyToClipboard(text: string) {
           <v-card-actions>
             <v-btn
               :to="'/blog/'+a.id"
+              prepend-icon="mdi-book-open-variant"
               variant="tonal"
             >
               Lesen
             </v-btn>
-            <v-btn variant="tonal" @click="copyToClipboard('https://morgen-pruefung.de/blog/'+a.id)">
+            <v-btn
+              prepend-icon="mdi-share-variant"
+              variant="tonal"
+              @click="copyToClipboard('https://morgen-pruefung.de/blog/'+a.id)"
+            >
               Teilen
             </v-btn>
           </v-card-actions>
