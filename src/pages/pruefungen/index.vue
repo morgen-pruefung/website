@@ -14,7 +14,7 @@
       <v-col>
         <v-card color="green" to="/pruefungen/ap1">
           <v-card-title class="text-center">
-            <h1>Teil 1<br>Alle Fachinformatiker</h1>
+            <h1>AP Teil 1<br>Alle Fachinformatiker</h1>
           </v-card-title>
         </v-card>
       </v-col>
@@ -37,7 +37,7 @@
       <v-col>
         <v-card color="warning" disabled>
           <v-card-title class="text-center">
-            <h1>Teil 2<br>Fachinformatiker Anwendungsentwicklung</h1>
+            <h1>AP Teil 2<br>Fachinformatiker Anwendungsentwicklung</h1>
           </v-card-title>
         </v-card>
       </v-col>
@@ -45,7 +45,7 @@
       <v-col>
         <v-card color="warning" disabled>
           <v-card-title class="text-center">
-            <h1>Teil 2<br>Fachinformatiker Systemintegration</h1>
+            <h1>AP Teil 2<br>Fachinformatiker Systemintegration</h1>
           </v-card-title>
         </v-card>
       </v-col>
@@ -53,7 +53,7 @@
       <v-col>
         <v-card color="warning" disabled>
           <v-card-title class="text-center">
-            <h1>Wirtschaft & Sozialkunde<br>Alle Fachinformatiker</h1>
+            <h1>AP Wirtschaft & Sozialkunde<br>Alle Fachinformatiker</h1>
           </v-card-title>
         </v-card>
       </v-col>
