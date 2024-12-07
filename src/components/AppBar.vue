@@ -70,30 +70,30 @@ import router from "@/router";
         </v-btn>
       </RouterLink>
 
-<!--      <v-btn icon>-->
-<!--        <v-icon>mdi-account-circle</v-icon>-->
-<!--        <v-menu activator="parent">-->
-<!--          <v-list>-->
-<!--            <RouterLink-->
-<!--              class="no-decoration"-->
-<!--              to="/login/"-->
-<!--            >-->
-<!--              <v-list-item prepend-icon="mdi-login">-->
-<!--                <v-list-item-title>Login</v-list-item-title>-->
-<!--              </v-list-item>-->
-<!--            </RouterLink>-->
+      <!--      <v-btn icon>-->
+      <!--        <v-icon>mdi-account-circle</v-icon>-->
+      <!--        <v-menu activator="parent">-->
+      <!--          <v-list>-->
+      <!--            <RouterLink-->
+      <!--              class="no-decoration"-->
+      <!--              to="/login/"-->
+      <!--            >-->
+      <!--              <v-list-item prepend-icon="mdi-login">-->
+      <!--                <v-list-item-title>Login</v-list-item-title>-->
+      <!--              </v-list-item>-->
+      <!--            </RouterLink>-->
 
-<!--            <RouterLink-->
-<!--              class="no-decoration"-->
-<!--              to="/register/"-->
-<!--            >-->
-<!--              <v-list-item prepend-icon="mdi-account-plus">-->
-<!--                <v-list-item-title>Registieren</v-list-item-title>-->
-<!--              </v-list-item>-->
-<!--            </RouterLink>-->
-<!--          </v-list>-->
-<!--        </v-menu>-->
-<!--      </v-btn>-->
+      <!--            <RouterLink-->
+      <!--              class="no-decoration"-->
+      <!--              to="/register/"-->
+      <!--            >-->
+      <!--              <v-list-item prepend-icon="mdi-account-plus">-->
+      <!--                <v-list-item-title>Registieren</v-list-item-title>-->
+      <!--              </v-list-item>-->
+      <!--            </RouterLink>-->
+      <!--          </v-list>-->
+      <!--        </v-menu>-->
+      <!--      </v-btn>-->
 
       <v-btn
         class="ml-4"
@@ -107,7 +107,10 @@ import router from "@/router";
               class="no-decoration"
               to=""
             >
-              <v-list-item disabled prepend-icon="mdi-account-group">
+              <v-list-item
+                disabled
+                prepend-icon="mdi-account-group"
+              >
                 <v-list-item-title>Über uns</v-list-item-title>
               </v-list-item>
             </RouterLink>
@@ -116,7 +119,10 @@ import router from "@/router";
               class="no-decoration"
               to=""
             >
-              <v-list-item disabled prepend-icon="mdi-message-question">
+              <v-list-item
+                disabled
+                prepend-icon="mdi-message-question"
+              >
                 <v-list-item-title>Hilfe</v-list-item-title>
               </v-list-item>
             </RouterLink>
@@ -125,12 +131,18 @@ import router from "@/router";
               class="no-decoration"
               to=""
             >
-              <v-list-item disabled prepend-icon="mdi-bug">
+              <v-list-item
+                disabled
+                prepend-icon="mdi-bug"
+              >
                 <v-list-item-title>Feedback</v-list-item-title>
               </v-list-item>
             </RouterLink>
 
-            <a href="https://github.com/morgen-pruefung"  target="_blank">
+            <a
+              href="https://github.com/morgen-pruefung"
+              target="_blank"
+            >
               <v-list-item prepend-icon="mdi-github">
                 <v-list-item-title>GitHub</v-list-item-title>
               </v-list-item>
