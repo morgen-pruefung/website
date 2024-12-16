@@ -18,6 +18,6 @@ import Footer from "@/components/Footer.vue";
 <style scoped>
 main {
   margin: 8px;
-  padding-bottom: 250px;
+  margin-bottom: 250px;
 }
 </style>
