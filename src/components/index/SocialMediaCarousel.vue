@@ -23,16 +23,16 @@
     </template>
 
     <SocialMediaCarouselItem
-      btn-color="light-blue-lighten-2"
-      color="light-blue"
+      btn-color="#ff2bdf"
+      color="#17ffff"
       icon="https://static.vecteezy.com/system/resources/thumbnails/016/716/450/small/tiktok-icon-free-png.png"
       link="https://www.tiktok.com/@morgen_pruefung"
       title="TikTok"
     />
 
     <SocialMediaCarouselItem
-      btn-color="purple-lighten-2"
-      color="purple"
+      btn-color="#514fc2"
+      color="#a83dff"
       icon="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e7/Instagram_logo_2016.svg/2048px-Instagram_logo_2016.svg.png"
       link="https://www.instagram.com/morgen_pruefung/"
       title="Instagram"

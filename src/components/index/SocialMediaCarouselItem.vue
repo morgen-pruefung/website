@@ -35,6 +35,7 @@ const props = defineProps<{
             :href="link"
             class="mt-4"
             elevation="0"
+            rounded
             size="large"
             variant="flat"
           >
