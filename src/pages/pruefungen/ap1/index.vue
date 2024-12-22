@@ -1,4 +1,25 @@
 <script lang="ts" setup>
+
+import {ref} from "vue";
+import {type Exam, getExam} from "@/api/exam/exam";
+import {getTopic, type Topic} from "@/api/topic/topic";
+
+const exam = ref<Exam>({
+  id: "fachinformatiker-ap1",
+  name: "Fachinformatiker Teil 1",
+  topic_ids: []
+})
+
+const topics = ref<Topic[]>([])
+
+onMounted(async () => {
+  exam.value = await getExam("fachinformatiker-ap1");
+
+  for (const topicId of exam.value.topic_ids) {
+    topics.value.push(await getTopic(topicId));
+  }
+})
+
 </script>
 
 <template>
@@ -20,204 +41,22 @@
 
     <v-container>
       <v-row>
-        <v-col md="6">
+        <v-col
+          v-for="t in topics"
+          :key="t.id"
+          md="6"
+        >
           <v-card
             color="blue-lighten-2"
             variant="outlined"
           >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
+            <RouterLink :to="'/themen/'+t.id">
+              <v-card-title>{{ t.name }}</v-card-title>
             </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
+            <v-card-text>{{ t.summary }}</v-card-text>
             <v-card-actions>
               <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
-                prepend-icon="mdi-school"
-                variant="tonal"
-              >
-                Lernen
-              </v-btn>
-            </v-card-actions>
-          </v-card>
-        </v-col>
-
-        <v-col md="6">
-          <v-card
-            color="blue-lighten-2"
-            variant="outlined"
-          >
-            <RouterLink :to="'/themen/projektmanagement'">
-              <v-card-title>Projektmanagement</v-card-title>
-            </RouterLink>
-            <v-card-text>
-              Projektplanung, Projektorganisation, Projektsteuerung, Projektabschluss
-            </v-card-text>
-            <v-card-actions>
-              <v-btn
-                :to="'/themen/projektmanagement'"
+                :to="'/themen/'+t.id"
                 prepend-icon="mdi-school"
                 variant="tonal"
               >
