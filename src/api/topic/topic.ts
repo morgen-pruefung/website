@@ -46,5 +46,5 @@ export async function getTopicTextContent(id: string): Promise<string> {
     throw new Error("Error fetching topic text content");
   }
 
-  return await response.json();
+  return await response.text();
 }
