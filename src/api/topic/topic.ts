@@ -2,6 +2,7 @@ export type Topic = {
   id: string;
   name: string;
   summary: string;
+  category: string;
 }
 
 export async function getTopics(): Promise<Topic[]> {

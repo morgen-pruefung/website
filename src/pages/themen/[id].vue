@@ -11,6 +11,7 @@ const topic = ref<Topic>({
   id: "N/A",
   name: "Not found",
   summary: "Topic not found",
+  category: "N/A",
 });
 
 const textContent = ref<string>("Topic was not found");
@@ -34,6 +35,7 @@ onMounted(async () => {
             {{ topic.name }}
           </h2>
           <p class="text-h5 text-secondary text-center mt-4">
+            <span class="code font-weight-bold">{{ topic.category }}</span><br>
             {{ topic.summary }}
           </p>
 

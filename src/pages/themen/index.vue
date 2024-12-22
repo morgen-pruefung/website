@@ -51,7 +51,7 @@ function copyToClipboard(text: string) {
             <v-card-title>{{ t.name }}</v-card-title>
           </RouterLink>
           <v-card-subtitle>
-<!--            <span class="code font-weight-bold">{{ formatStringArray(a.tags) }}</span><br>-->
+            <span class="code font-weight-bold">{{ t.category }}</span><br>
           </v-card-subtitle>
           <v-card-text>{{ t.summary }}</v-card-text>
           <v-card-actions>
