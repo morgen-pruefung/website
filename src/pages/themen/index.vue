@@ -1,6 +1,7 @@
 <script lang="ts" setup>
 
 import {getTopics, type Topic} from "@/api/topic/topic";
+import WorkInProgressDisclaimer from "@/components/WorkInProgressDisclaimer.vue";
 
 const topics = ref<Topic[]>([]);
 
@@ -29,6 +30,8 @@ function copyToClipboard(text: string) {
           <p class="text-h5 text-secondary text-center mt-4">
             Zusammenstellung von Themen für Prüfungen
           </p>
+
+          <WorkInProgressDisclaimer/>
         </div>
       </v-col>
     </v-row>

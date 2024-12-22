@@ -16,5 +16,6 @@ declare module 'vue' {
     SocialMediaCarousel: typeof import('./components/index/SocialMediaCarousel.vue')['default']
     SocialMediaCarouselItem: typeof import('./components/index/SocialMediaCarouselItem.vue')['default']
     TopicCarouselItem: typeof import('./components/index/TopicCarouselItem.vue')['default']
+    WorkInProgressDisclaimer: typeof import('./components/WorkInProgressDisclaimer.vue')['default']
   }
 }

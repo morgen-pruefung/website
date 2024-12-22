@@ -36,6 +36,8 @@ onMounted(async () => {
           <p class="text-h5 text-secondary text-center mt-4">
             {{ topic.summary }}
           </p>
+
+          <WorkInProgressDisclaimer/>
         </div>
       </v-col>
     </v-row>
