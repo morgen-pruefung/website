@@ -4,6 +4,7 @@ const props = defineProps<{
   title: string;
   subtitle: string;
   color: string;
+  link: string;
 }>();
 
 </script>
@@ -17,14 +18,17 @@ const props = defineProps<{
     >
       <div class="d-flex fill-height justify-center align-center text-center">
         <div>
-          <h3 class="text-h3">
-            {{ props.title }}
-          </h3>
-          <h4 class="text-h4">
-            {{ props.subtitle }}
-          </h4>
+          <RouterLink :to="props.link">
+            <h3 class="text-h3">
+              {{ props.title }}
+            </h3>
+            <h4 class="text-h4">
+              {{ props.subtitle }}
+            </h4>
+          </RouterLink>
           <v-btn
             :color="props.color + '-darken-3'"
+            :to="props.link"
             class="mt-8"
             elevation="0"
             size="large"

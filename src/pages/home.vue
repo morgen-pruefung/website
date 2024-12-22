@@ -110,26 +110,31 @@ const timeLeft = computed(() => {
 
           <TopicCarouselItem
             color="pink"
+            link="/pruefungen/ap1"
             subtitle="Fachinformatiker | Teil 1"
             title="Themenübersicht"
           />
           <TopicCarouselItem
             color="blue"
+            link="/themen/grundlagen-sql"
             subtitle="Fachinformatiker | Teil 1"
             title="Grundlagen SQL"
           />
           <TopicCarouselItem
             color="green"
+            link="/themen/projektmanagement"
             subtitle="Fachinformatiker | Teil 1"
             title="Projektmanagement"
           />
           <TopicCarouselItem
             color="yellow"
+            link="/themen/angebotsvergleich"
             subtitle="Fachinformatiker | Teil 1"
             title="Angebotsvergleich"
           />
           <TopicCarouselItem
             color="red"
+            link="/themen/it-sicherheit"
             subtitle="Fachinformatiker | Teil 1"
             title="IT-Sicherheit"
           />
