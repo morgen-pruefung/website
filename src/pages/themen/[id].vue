@@ -26,7 +26,7 @@ onMounted(async () => {
 </script>
 
 <template>
-  <v-container class="w-40">
+  <v-container class="w-66">
     <v-row>
       <v-col>
         <div>
@@ -55,10 +55,6 @@ onMounted(async () => {
 ::v-deep #content * {
   padding: revert;
   margin: revert;
-}
-
-.w-40 {
-  width: 40%;
 }
 
 ::v-deep p {
