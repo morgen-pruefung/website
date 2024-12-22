@@ -5,14 +5,15 @@
 <template>
   <div class="container pa-2 d-flex justify-center">
     <div class="d-flex justify-center flex-column mr-4">
-      <p>Bereite dich jetzt auf deine Prüfung vor, bevor es zu spät ist!</p>
+      <p>Bereite dich jetzt auf die Abschlussprüfung Teil 1 vor, bevor es zu spät ist!</p>
     </div>
     <RouterLink to="register/">
       <v-btn
-        prepend-icon="mdi-alert"
-        variant="outlined"
+        color="red-lighten-1"
+        to="/pruefungen/ap1"
+        variant="flat"
       >
-        LERNE JETZT
+        Zur Übersicht
       </v-btn>
     </RouterLink>
   </div>
