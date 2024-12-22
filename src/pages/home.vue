@@ -167,6 +167,7 @@ const timeLeft = computed(() => {
               class="font-weight-bold"
               color="secondary"
               prepend-icon="mdi-arrow-right"
+              to="/pruefungen/ap1"
               variant="flat"
               width="100%"
             >
@@ -186,14 +187,13 @@ const timeLeft = computed(() => {
         >
           <v-card-actions>
             <v-btn
-              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="secondary"
-              prepend-icon="mdi-arrow-right"
+              disabled
               variant="flat"
               width="100%"
             >
-              Jetzt schnell lernen
+              Bald verfügbar
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -209,14 +209,13 @@ const timeLeft = computed(() => {
         >
           <v-card-actions>
             <v-btn
-              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="secondary"
-              prepend-icon="mdi-arrow-right"
+              disabled
               variant="flat"
               width="100%"
             >
-              Jetzt schnell lernen
+              Bald verfügbar
             </v-btn>
           </v-card-actions>
         </v-card>
@@ -232,14 +231,13 @@ const timeLeft = computed(() => {
         >
           <v-card-actions>
             <v-btn
-              append-icon="mdi-arrow-left"
               class="font-weight-bold"
               color="secondary"
-              prepend-icon="mdi-arrow-right"
+              disabled
               variant="flat"
               width="100%"
             >
-              Jetzt schnell lernen
+              Bald verfügbar
             </v-btn>
           </v-card-actions>
         </v-card>
