@@ -258,19 +258,19 @@ const timeLeft = computed(() => {
       <v-col class="d-flex justify-center">
         <v-expansion-panels class="w-66">
           <v-expansion-panel
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima"
+            text="Ja, für die anstehenden Prüfungen sind alle Lerninhalte kostenfrei. Wir möchten dir die Möglichkeit geben, dich bestmöglich auf deine Prüfungen vorzubereiten."
             title="Sind alle Lerninhalte kostenfrei?"
           />
           <v-expansion-panel
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima"
+            text="Wir freuen uns über jede Unterstützung. Du kannst uns gerne eine Spende zukommen lassen oder uns auf Social Media folgen und unsere Beiträge teilen."
             title="Wie kann ich euch unterstützen?"
           />
           <v-expansion-panel
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima"
+            text="Scroll einfach nach unten und du findest unseren Discord-Server, sowie unsere E-Mails. Wir freuen uns auf deine Nachricht."
             title="Wie kann ich euch kontaktieren?"
           />
           <v-expansion-panel
-            text="Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi, ratione debitis quis est labore voluptatibus! Eaque cupiditate minima"
+            text="Du kannst uns gerne Feedback geben, indem du uns eine E-Mail schreibst oder uns auf Social Media kontaktierst."
             title="Wie kann ich euch Feedback geben?"
           />
         </v-expansion-panels>
