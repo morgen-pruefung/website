@@ -31,7 +31,7 @@ onMounted(async () => {
       Einrichten eines IT-gestützten Arbeitsplatzes
     </h4>
 
-    <WorkInProgressDisclaimer/>
+    <WorkInProgressDisclaimer />
 
     <v-divider class="my-16" />
     <h1 class="my-4">

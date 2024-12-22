@@ -9,7 +9,7 @@
         <h2 class="text-h2 text-center text-primary">
           Verfügbare Prüfungen
         </h2>
-        <WorkInProgressDisclaimer/>
+        <WorkInProgressDisclaimer />
       </v-col>
     </v-row>
 

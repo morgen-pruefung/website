@@ -3,10 +3,17 @@
 import {getTopics, type Topic} from "@/api/topic/topic";
 import WorkInProgressDisclaimer from "@/components/WorkInProgressDisclaimer.vue";
 
+interface Category {
+  name: string;
+  topics: Topic[];
+}
+
 const topics = ref<Topic[]>([]);
+const sortedTopics = ref<Category[]>([]);
 
 onMounted(async () => {
   topics.value = await getTopics();
+  sortedTopics.value = sortTopicsByCategory();
 });
 
 function copyToClipboard(text: string) {
@@ -15,6 +22,24 @@ function copyToClipboard(text: string) {
   }, (err) => {
     console.error('Could not copy text: ', err);
   });
+}
+
+function sortTopicsByCategory(): Category[] {
+  const categories: Category[] = [];
+
+  topics.value.forEach((topic) => {
+    const category = categories.find((c) => c.name === topic.category);
+    if (category) {
+      category.topics.push(topic);
+    } else {
+      categories.push({
+        name: topic.category,
+        topics: [topic]
+      });
+    }
+  });
+
+  return categories;
 }
 
 </script>
@@ -31,18 +56,28 @@ function copyToClipboard(text: string) {
             Zusammenstellung von Themen für Prüfungen
           </p>
 
-          <WorkInProgressDisclaimer/>
+          <WorkInProgressDisclaimer />
         </div>
       </v-col>
     </v-row>
   </v-container>
 
-  <v-container class="mt-16 w-33">
+  <v-container class="mt-4 w-33">
     <v-row
-      v-for="t in topics"
-      :key="t.id"
+      v-for="c in sortedTopics"
+      :key="c.name"
     >
       <v-col>
+        <h1 class="text-primary">
+          {{ c.name }}
+        </h1>
+      </v-col>
+
+      <v-col
+        v-for="t in c.topics"
+        :key="t.id"
+        md="12"
+      >
         <v-card
           color="green-lighten-2"
           variant="outlined"

@@ -39,7 +39,7 @@ onMounted(async () => {
             {{ topic.summary }}
           </p>
 
-          <WorkInProgressDisclaimer/>
+          <WorkInProgressDisclaimer />
         </div>
       </v-col>
     </v-row>
