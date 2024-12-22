@@ -29,6 +29,7 @@ import router from "@/router";
         disabled
         prepend-icon="mdi-file-document"
         rounded
+        to="/pruefungen/"
       >
         Prüfungen
       </v-btn>
@@ -39,6 +40,7 @@ import router from "@/router";
         disabled
         prepend-icon="mdi-puzzle"
         rounded
+        to="/themen/"
       >
         Themen
       </v-btn>
