@@ -30,9 +30,9 @@ onMounted(async () => {
     <v-row>
       <v-col>
         <div>
-          <h1 class="text-h2 font-weight-bold text-primary text-center">
+          <h2 class="text-h2 font-weight-bold text-primary text-center">
             {{ topic.name }}
-          </h1>
+          </h2>
           <p class="text-h5 text-secondary text-center mt-4">
             {{ topic.summary }}
           </p>

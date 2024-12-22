@@ -27,9 +27,9 @@ function copyToClipboard(text: string) {
     <v-row>
       <v-col>
         <div>
-          <h1 class="text-h2 font-weight-bold text-primary text-center">
+          <h2 class="text-h2 font-weight-bold text-primary text-center">
             Morgen-Pruefung.de Blog
-          </h1>
+          </h2>
           <p class="text-h5 text-secondary text-center mt-4">
             Die neusten News über Lernen und Prüfungen!
           </p>

@@ -6,9 +6,9 @@
   <v-container class="w-66">
     <v-row>
       <v-col>
-        <h1 class="text-h2 text-center text-primary">
+        <h2 class="text-h2 text-center text-primary">
           Verfügbare Prüfungen
-        </h1>
+        </h2>
         <WorkInProgressDisclaimer/>
       </v-col>
     </v-row>
@@ -34,9 +34,9 @@
 
     <v-row>
       <v-col>
-        <h1 class="text-h2 text-center text-warning">
+        <h2 class="text-h2 text-center text-warning">
           Bald verfügbare Prüfungen
-        </h1>
+        </h2>
       </v-col>
     </v-row>
 

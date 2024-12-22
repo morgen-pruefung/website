@@ -24,12 +24,12 @@ onMounted(async () => {
 
 <template>
   <div class="content">
-    <h1 class="text-h2 text-center text-primary mt-8 mb-4">
+    <h2 class="text-h2 text-center text-primary mt-8 mb-4">
       AP Teil 1 - für alle Fachinformatiker
-    </h1>
-    <h1 class="text-h4 text-center text-secondary mb-8">
+    </h2>
+    <h4 class="text-h4 text-center text-secondary mb-8">
       Einrichten eines IT-gestützten Arbeitsplatzes
-    </h1>
+    </h4>
 
     <WorkInProgressDisclaimer/>
 

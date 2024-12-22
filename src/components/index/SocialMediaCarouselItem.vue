@@ -27,9 +27,12 @@ const props = defineProps<{
         </div>
 
         <div class="content-container">
-          <h1 class="text-h3">
+          <h3 class="text-h3">
             {{ props.title }}
-          </h1>
+          </h3>
+          <p class="text-body-1">
+            Folge uns auf Social Media
+          </p>
           <v-btn
             :color="props.btnColor"
             :href="link"

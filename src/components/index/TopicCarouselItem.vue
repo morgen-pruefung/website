@@ -17,12 +17,12 @@ const props = defineProps<{
     >
       <div class="d-flex fill-height justify-center align-center text-center">
         <div>
-          <h1 class="text-h3">
+          <h3 class="text-h3">
             {{ props.title }}
-          </h1>
-          <h1 class="text-h4">
+          </h3>
+          <h4 class="text-h4">
             {{ props.subtitle }}
-          </h1>
+          </h4>
           <v-btn
             :color="props.color + '-darken-3'"
             class="mt-8"

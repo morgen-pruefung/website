@@ -73,9 +73,9 @@ const timeLeft = computed(() => {
           variant="tonal"
           width="50%"
         >
-          <h1 class="text-h3">
+          <h3 class="text-h3">
             Zeit bis zur AP 1
-          </h1>
+          </h3>
           <h2 class="text-h2 text-red-darken-4 mt-4">
             {{ timeLeft }}
           </h2>

@@ -29,13 +29,13 @@
           variant="outlined"
           width="60%"
         >
-          <h1 class="text-h3">
+          <h3 class="text-h3">
             Diese Seite ist noch in Arbeit!
-          </h1>
+          </h3>
 
-          <h1 class="text-h5 mt-4 text-grey">
+          <p class="text-h5 mt-4 text-grey">
             Wir arbeiten mit Hochdruck daran, dir die besten Lerninhalte zu bieten.
-          </h1>
+          </p>
 
           <v-card-actions>
             <v-btn

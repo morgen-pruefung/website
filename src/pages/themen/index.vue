@@ -24,9 +24,9 @@ function copyToClipboard(text: string) {
     <v-row>
       <v-col>
         <div>
-          <h1 class="text-h2 font-weight-bold text-primary text-center">
+          <h2 class="text-h2 font-weight-bold text-primary text-center">
             Themengebiete für Prüfungen
-          </h1>
+          </h2>
           <p class="text-h5 text-secondary text-center mt-4">
             Zusammenstellung von Themen für Prüfungen
           </p>

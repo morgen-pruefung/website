@@ -29,9 +29,9 @@ onMounted(async () => {
     <v-row>
       <v-col>
         <div>
-          <h1 class="text-h2 font-weight-bold text-primary text-center">
+          <h2 class="text-h2 font-weight-bold text-primary text-center">
             {{ article.title }}
-          </h1>
+          </h2>
           <p class="text-h5 text-secondary text-center mt-4">
             {{ formatStringArray(article.authors) }} | {{ formatDate(article.published_at) }}<br>
             <span class="code font-weight-bold">{{ formatStringArray(article.tags) }}</span><br>
