@@ -8,6 +8,7 @@
 import {createRouter, createWebHistory} from 'vue-router/auto'
 import {setupLayouts} from 'virtual:generated-layouts'
 import {routes} from 'vue-router/auto-routes'
+import {pageVisited} from "@/api/analytics/analytics";
 
 const router = createRouter({
   history: createWebHistory(),
@@ -32,5 +33,15 @@ router.onError((err, to) => {
 router.isReady().then(() => {
   localStorage.removeItem('vuetify:dynamic-reload')
 })
+
+router.beforeEach(() => {
+  // Scroll to top
+  window.scrollTo(0, 0)
+
+  pageVisited({
+    url: window.location.href,
+    referrer: document.referrer,
+  })
+});
 
 export default router
