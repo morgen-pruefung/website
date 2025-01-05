@@ -1,6 +1,6 @@
 export type PageVisitedRequest = {
   url: string;
-  referrer: string;
+  referer: string;
 }
 
 export async function pageVisited(request: PageVisitedRequest): Promise<void> {

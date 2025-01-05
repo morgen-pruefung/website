@@ -40,7 +40,7 @@ router.beforeEach(() => {
 
   pageVisited({
     url: window.location.href,
-    referrer: document.referrer,
+    referer: document.referrer,
   })
 });
 
