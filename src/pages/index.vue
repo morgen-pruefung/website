@@ -39,15 +39,25 @@
 
           <v-card-actions>
             <v-btn
-              append-icon="mdi-alert"
               class="font-weight-bold mt-8"
               color="red"
               prepend-icon="mdi-alert"
               to="/blog"
               variant="flat"
-              width="100%"
+              width="50%"
             >
               Schau bei unseren Blog vorbei
+            </v-btn>
+
+            <v-btn
+              class="font-weight-bold mt-8"
+              color="red"
+              prepend-icon="mdi-alert"
+              to="/newsletter"
+              variant="flat"
+              width="50%"
+            >
+              Abboniere unseren Newsletter
             </v-btn>
           </v-card-actions>
         </v-card>
