@@ -58,7 +58,8 @@ async function register() {
           color="primary"
           label="Email"
           placeholder="z. B. beispiel@gmail.com"
-          variant="outlined"/>
+          variant="outlined"
+        />
       </v-col>
     </v-row>
 

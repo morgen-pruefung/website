@@ -2,18 +2,14 @@
 
 import {getTopics, type Topic} from "@/api/topic/topic";
 import WorkInProgressDisclaimer from "@/components/WorkInProgressDisclaimer.vue";
-
-interface Category {
-  name: string;
-  topics: Topic[];
-}
+import {type Category, sortTopicsByCategory} from "@/api/topic/category";
 
 const topics = ref<Topic[]>([]);
 const sortedTopics = ref<Category[]>([]);
 
 onMounted(async () => {
   topics.value = await getTopics();
-  sortedTopics.value = sortTopicsByCategory();
+  sortedTopics.value = sortTopicsByCategory(topics.value);
 });
 
 function copyToClipboard(text: string) {
@@ -22,24 +18,6 @@ function copyToClipboard(text: string) {
   }, (err) => {
     console.error('Could not copy text: ', err);
   });
-}
-
-function sortTopicsByCategory(): Category[] {
-  const categories: Category[] = [];
-
-  topics.value.forEach((topic) => {
-    const category = categories.find((c) => c.name === topic.category);
-    if (category) {
-      category.topics.push(topic);
-    } else {
-      categories.push({
-        name: topic.category,
-        topics: [topic]
-      });
-    }
-  });
-
-  return categories;
 }
 
 </script>
