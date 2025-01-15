@@ -49,7 +49,7 @@ onMounted(async () => {
           md="6"
         >
           <v-card
-            color="blue-lighten-2"
+            color="green-lighten-2"
             variant="outlined"
           >
             <RouterLink :to="'/themen/'+t.id">
