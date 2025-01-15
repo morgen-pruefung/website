@@ -84,13 +84,34 @@ onMounted(async () => {
 .sidebar {
   position: fixed;
   left: 0;
-  width: 100%;
+  width: 250px;
   height: 100%;
 }
 
 ::v-deep #content * {
   padding: revert;
   margin: revert;
+}
+
+::v-deep #content h1,
+::v-deep #content h2,
+::v-deep #content h3{
+  color: #4dd857;
+}
+
+::v-deep #content p,
+::v-deep #content li,
+::v-deep #content code{
+  color: #ced5cf;
+}
+
+::v-deep #content h1,
+::v-deep #content h2 {
+  margin-top: 2em;
+}
+
+::v-deep #content h1:first-of-type {
+  margin-top: 0;
 }
 
 ::v-deep p {
