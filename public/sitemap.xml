@@ -6,14 +6,31 @@
         <loc>https://morgen-pruefung.de/</loc>
         <lastmod>2024-12-04</lastmod>
         <priority>1.0</priority>
-        <changefreq>daily</changefreq>
+        <changefreq>weekly</changefreq>
     </url>
     <url>
         <loc>https://morgen-pruefung.de/blog/</loc>
         <lastmod>2024-12-04</lastmod>
-        <priority>0.75</priority>
-        <changefreq>daily</changefreq>
+        <priority>0.5</priority>
+        <changefreq>weekly</changefreq>
     </url>
-
+    <url>
+        <loc>https://morgen-pruefung.de/newsletter/</loc>
+        <lastmod>2024-12-04</lastmod>
+        <priority>0.5</priority>
+        <changefreq>monthly</changefreq>
+    </url>
+    <url>
+        <loc>https://morgen-pruefung.de/pruefungen/</loc>
+        <lastmod>2024-12-04</lastmod>
+        <priority>0.75</priority>
+        <changefreq>weekly</changefreq>
+    </url>
+    <url>
+        <loc>https://morgen-pruefung.de/themen/</loc>
+        <lastmod>2024-12-04</lastmod>
+        <priority>0.75</priority>
+        <changefreq>weekly</changefreq>
+    </url>
 
 </urlset>
