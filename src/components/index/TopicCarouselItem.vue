@@ -12,9 +12,10 @@ const props = defineProps<{
 <template>
   <v-carousel-item>
     <v-sheet
-      :color="props.color + '-darken-2'"
+      :color="props.color"
+      class="px-16"
       height="100%"
-      rounded
+      rounded="xl"
     >
       <div class="d-flex fill-height justify-center align-center text-center">
         <div>
@@ -27,10 +28,11 @@ const props = defineProps<{
             </h4>
           </RouterLink>
           <v-btn
-            :color="props.color + '-darken-3'"
             :to="props.link"
             class="mt-8"
+            color="red"
             elevation="0"
+            rounded
             size="large"
           >
             Jetzt lernen

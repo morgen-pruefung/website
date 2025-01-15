@@ -2,6 +2,7 @@
 
 const props = defineProps<{
   title: string;
+  subtitle: string;
   icon: string;
   color: string;
   btnColor: string;
@@ -14,8 +15,9 @@ const props = defineProps<{
   <v-carousel-item>
     <v-sheet
       :color="props.color"
+      class="px-16"
       height="100%"
-      rounded
+      rounded="xl"
     >
       <div class="d-flex fill-height justify-center align-center">
         <div class="mx-8">
@@ -31,7 +33,7 @@ const props = defineProps<{
             {{ props.title }}
           </h3>
           <p class="text-body-1">
-            Folge uns auf Social Media
+            {{ props.subtitle }}
           </p>
           <v-btn
             :color="props.btnColor"

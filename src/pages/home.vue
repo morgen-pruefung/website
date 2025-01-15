@@ -83,8 +83,8 @@ const timeLeft = computed(() => {
       </v-col>
     </v-row>
 
-    <v-row class="mt-16">
-      <v-col cols="6">
+    <div class="d-flex w-100 justify-space-between mt-16">
+      <div style="width: 600px">
         <h1 class="text-primary text-center">
           Ausgewählte Themen
         </h1>
@@ -109,7 +109,7 @@ const timeLeft = computed(() => {
           </template>
 
           <TopicCarouselItem
-            color="pink"
+            color="green-accent-3"
             link="/pruefungen/ap1"
             subtitle="Fachinformatiker | Teil 1"
             title="Themenübersicht"
@@ -120,34 +120,16 @@ const timeLeft = computed(() => {
             subtitle="Fachinformatiker | Teil 1"
             title="Grundlagen SQL"
           />
-          <TopicCarouselItem
-            color="green"
-            link="/themen/projektmanagement"
-            subtitle="Fachinformatiker | Teil 1"
-            title="Projektmanagement"
-          />
-          <TopicCarouselItem
-            color="yellow"
-            link="/themen/angebotsvergleich"
-            subtitle="Fachinformatiker | Teil 1"
-            title="Angebotsvergleich"
-          />
-          <TopicCarouselItem
-            color="red"
-            link="/themen/it-sicherheit"
-            subtitle="Fachinformatiker | Teil 1"
-            title="IT-Sicherheit"
-          />
         </v-carousel>
-      </v-col>
+      </div>
 
-      <v-col cols="6">
+      <div style="width: 500px">
         <h1 class="text-primary text-center">
           Social Media
         </h1>
         <SocialMediaCarousel />
-      </v-col>
-    </v-row>
+      </div>
+    </div>
 
     <v-row class="mt-16">
       <v-col>

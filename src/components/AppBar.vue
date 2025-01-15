@@ -26,7 +26,6 @@ import router from "@/router";
       <v-btn
         class="mx-4"
         color="grey"
-        disabled
         prepend-icon="mdi-file-document"
         rounded
         to="/pruefungen/"
@@ -37,7 +36,6 @@ import router from "@/router";
       <v-btn
         class="mx-4"
         color="grey"
-        disabled
         prepend-icon="mdi-puzzle"
         rounded
         to="/themen/"
