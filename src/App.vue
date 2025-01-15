@@ -16,8 +16,4 @@ import Footer from "@/components/Footer.vue";
 </script>
 
 <style scoped>
-main {
-  margin: 8px;
-  margin-bottom: 250px;
-}
 </style>

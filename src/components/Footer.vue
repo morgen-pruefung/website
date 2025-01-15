@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <v-footer class="custom-footer pt-8">
+  <v-footer class="pt-8">
     <v-container class="w-66">
       <v-row>
         <v-col>
@@ -72,13 +72,6 @@
 </template>
 
 <style scoped>
-.custom-footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-}
-
 .bottom-footer{
   text-align: center;
 }
