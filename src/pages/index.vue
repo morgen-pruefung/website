@@ -60,7 +60,7 @@ const timeLeft = computed(() => {
       </v-col>
     </v-row>
 
-    <v-row class="mt-16">
+    <v-row class="my-16">
       <v-col
         class="d-flex justify-center"
         md="12"
@@ -73,7 +73,7 @@ const timeLeft = computed(() => {
           variant="tonal"
           width="50%"
         >
-          <h3 class="text-h3">
+          <h3 class="text-h3 font-weight-bold font-italic">
             Zeit bis zur AP 1
           </h3>
           <h2 class="text-h2 text-red-darken-4 mt-4">
@@ -85,8 +85,8 @@ const timeLeft = computed(() => {
 
     <div class="d-flex w-100 justify-space-between mt-16">
       <div style="width: 600px">
-        <h1 class="text-primary text-center">
-          Ausgewählte Themen
+        <h1 class="text-green-accent-3 text-center font-weight-bold font-italic">
+          AUSGEWÄHLTE THEMEN
         </h1>
         <v-carousel
           cycle
@@ -124,8 +124,8 @@ const timeLeft = computed(() => {
       </div>
 
       <div style="width: 500px">
-        <h1 class="text-primary text-center">
-          Social Media
+        <h1 class="text-green-accent-3 text-center font-weight-bold font-italic">
+          SOCIAL MEDIA
         </h1>
         <SocialMediaCarousel />
       </div>
