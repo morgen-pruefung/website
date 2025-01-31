@@ -6,8 +6,12 @@ import {getTopic, getTopics, getTopicTextContent, type Topic} from "@/api/topic/
 import MarkdownIt from "markdown-it";
 import {type Category, sortTopicsByCategory} from "@/api/topic/category";
 
-const params = router.currentRoute.value.params as {id: string};
-const topicId = params.id;
+
+const topicId = computed(() => {
+  const params = router.currentRoute.value.params as {id: string};
+  return params.id
+});
+
 const topic = ref<Topic>({
   id: "N/A",
   name: "Not found",
@@ -19,16 +23,26 @@ const categories = ref<Category[]>([]);
 
 const textContent = ref<string>("Topic was not found");
 
+watch(topicId, async () => {
+  await update();
+});
+
 onMounted(async () => {
-  topic.value = await getTopic(topicId);
+  await update();
+});
+
+async function update() {
+  topic.value = await getTopic(topicId.value);
   textContent.value = topic.value.summary;
-  textContent.value = await getTopicTextContent(topicId);
+  textContent.value = await getTopicTextContent(topicId.value);
 
   const md = MarkdownIt();
   document.getElementById("content")!.innerHTML = md.render(textContent.value);
 
   categories.value = sortTopicsByCategory(await getTopics());
-});
+
+  window.scrollTo(0, 0);
+}
 </script>
 
 <template>
